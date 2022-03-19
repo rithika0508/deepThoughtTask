@@ -11,8 +11,8 @@ const booksRoutes = require("./routes/books");
 const adminRoute = require("./routes/admin");
 app.use("/books", booksRoutes)
 app.use("/admin", adminRoute)
-ConnectDB();
 
+ConnectDB();
 const PORT = process.env.PORT || 5000;
 
 const server = app.listen(PORT, () => {
